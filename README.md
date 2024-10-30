@@ -25,7 +25,6 @@ This project demonstrates how to package a web application with a MongoDB databa
 
 For macOS users:
 
-```bash
 brew install minikube
 
 
@@ -34,7 +33,7 @@ brew install minikube
 ### 3. Configure Minikube Driver
 
 We'll use Docker as the driver for Minikube. Start Minikube with the Docker driver:
-```bash
+
 minikube start --driver docker
 
 Usage
