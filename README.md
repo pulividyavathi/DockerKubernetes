@@ -27,17 +27,18 @@ For other operating systems, refer to the official Minikube documentation.
 We'll use Docker as the driver for Minikube. Start Minikube with the Docker driver:
 minikube start --driver=docker
 
-Usage
+## Usage
 
-Check Minikube Status
+### Check Minikube Status
+
 To verify the status of Minikube:
 minikube status
 
-Check Kubernetes Nodes
+### Check Kubernetes Nodes
 Minikube includes kubectl as a dependency. To check the status of all nodes:
 kubectl get nodes
 
-Kubernetes Configuration Files
+## Kubernetes Configuration Files
 You’ll need to create the following Kubernetes configuration files:
 
 ConfigMap: Define MongoDB endpoint configuration.
@@ -47,10 +48,10 @@ Web Application Deployment: Configuration file for deploying the web application
 
 For syntax and examples of these configuration files, refer to the Kubernetes Documentation.
 
-Docker Image
+## Docker Image
 The Docker image of the web application is pulled from Docker Hub. Ensure the image is specified correctly in your Kubernetes deployment configuration files.
 
-Accessing the Application
+## Accessing the Application
 Once the deployments are configured and running, you can access the web application by using the Minikube service command:
 
 minikube service <service-name>
