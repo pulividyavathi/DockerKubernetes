@@ -39,10 +39,10 @@ minikube start --driver docker
 Usage
 Check Minikube Status
 To verify the status of Minikube:
-bash
+
 minikube status
 
 Check Kubernetes Nodes
 Minikube includes kubectl as a dependency. To check the status of all nodes:
-bash
+
 kubectl get nodes
